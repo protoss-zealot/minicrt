@@ -1,0 +1,19 @@
+#
+# This is an implementation of a mini c runtime libray.
+# It's very easy to understand and I use it to learn the linker && loader.
+# I found some bugs in other pepole's implementaion,so I do it myself.
+#												-------by shadowxiaoh
+# 
+# If you want to use it,follow the steps below:
+#
+# 1.compile this lib use the command below
+# $gcc -c -fno-builtin -nostdlib -fno-stack-protector entry.c malloc.c stdio.c string.c printf.c
+# $ar -rs minicrt.a malloc.o printf.o stdio.o string.o
+#
+# 2.compile your test programme,use the command below
+# $gcc -c -ggdb -fno-builtin -nostdlib -fno-stack-protector yourtestfile.c
+#
+# 3.link this libray
+# $ld -static -e mini_crt_entry entry.o yourtestfile.o minicrt.a -o test
+#
+#
