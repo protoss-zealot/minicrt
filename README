@@ -4,7 +4,7 @@ Mini CRT
 # This is an implementation of a mini c runtime libray.
 # It's very easy to understand and I use it to learn the linker && loader.
 # I found some bugs in other pepole's implementaion,so I do it myself.
-#												-------by shadowxiaoh
+#						-------by shadowxiaoh
 # 
 # If you want to use it,follow the steps below:
 #
